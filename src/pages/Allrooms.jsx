@@ -8,7 +8,7 @@ const Allrooms = () => {
             <h1 className='text-[40px] text-[#252525] font-medium'>Hotel Rooms</h1>
             <p className='text-[#6B7280E5] font-medium mt-5'>Take advantage of our limited-time offers and special packages to enhance<br></br> your stay and create unforgettable memories.</p>
             <div>
-                {roomsDummyData.map((item,index)=><div className='flex py-14 gap-10 border-b border-[#6B72804D]'>
+                {roomsDummyData.map((item,index)=><div key={item._id} className='flex py-14 gap-10 border-b border-[#6B72804D]'>
                     <img className='w-[412px] h-[260px] rounded-[15px]' src={item.images[0]} alt='image' />
                     <div>
                         <p className='text-[#838383] text-[14px] font-medium'>New York</p>
